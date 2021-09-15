@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('./images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 3%;
+    margin: 3%;
+}
+
+.container .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 15%;
+}
+
+.container .illustrations {
+    width: 50%;
+    position: absolute;
+    top: 140px;
+    left: 30px;
+}
+
+.description {
+    width: 30%;
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    padding-right: 3%;
+}
+
+.description h1 {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+}
+
+.description p {
+    padding-bottom: 15px;
+}
+
+.description button {
+    font-size: 17px;
+    width: 45%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #fff;
+    color: hsl(300, 69%, 71%);
+    box-shadow: 3px 3px rgb(80, 78, 78);
+    cursor: pointer;
+}
+
+.description button:hover {
+    color: hsl(257, 40%, 49%);
+    transition: all 100ms;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+}
+
+.social-media ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.social-media ul li {
+    padding: 5px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*Mobile Design*/
+
+@media (width: 375px) {
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+    }
+    .container .logo {
+        width: 35%;
+        position: absolute;
+        left: 30px;
+    }
+    .container .illustrations {
+        width: 85%;
+        position: absolute;
+        top: 90px;
+    }
+    .description {
+        padding: 0;
+        position: absolute;
+        top: 310px;
+        left: 135px;
+        height: 5%;
+        margin-right: 20px;
+    }
+    .description h1 {
+        padding: 3px;
+        font-size: 13px;
+    }
+    .description p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .description button {
+        width: 90%;
+        font-size: 12px;
+        margin-right: 40px;
+    }
+    .social-media {
+        font-size: 19px;
+    }
+}
